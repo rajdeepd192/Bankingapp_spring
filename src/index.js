@@ -1,17 +1,53 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import AccForm from './account';
+import HomeSc from './Home';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+
+  function Home(){
+    return(
+      <h2 className="home">Cancellation</h2>
+    )
+  }
+  
+  function Account() {
+    return (
+      <h2 className="account">Account</h2>
+    )
+  }
+  
+  function DefaultRen() {
+    return (<Router>
+      <div>
+        <h1>Banking service</h1>
+    <ul>
+   < marquee behavior="scroll" scrollamount="3" direction="left" onmouseover="this.setAttribute('scrollamount',0);" onmouseout="this.start();">    
+             
+              <Link to="/account">|   Passenger    </Link>
+              </ marquee>
+          </ul>
+         
+  
+        <Switch>
+          <Route path="/account">
+            <AccForm/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+  }
+  
+  ReactDOM.render(
+    <DefaultRen />,
+    document.getElementById('root')
+  );
+  
