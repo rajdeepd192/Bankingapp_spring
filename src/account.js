@@ -53,7 +53,7 @@ export default class AccForm extends React.Component {
     render() {
         return (
             <form onSubmit={this.submitHandler}>
-              <h1>||Account Details||</h1>
+              <h1>||Account Creation||</h1>
               <p>Enter Name:</p>
               <input
                 type="text"

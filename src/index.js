@@ -27,7 +27,7 @@ import {
   function DefaultRen() {
     return (<Router>
       <div>
-        <h1>Banking service</h1>
+        <h1>Bank Admin System</h1>
     <ul>
    < marquee behavior="scroll" scrollamount="3" direction="left" onmouseover="this.setAttribute('scrollamount',0);" onmouseout="this.start();">    
              
