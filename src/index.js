@@ -31,7 +31,8 @@ import {
     <ul>
    < marquee behavior="scroll" scrollamount="3" direction="left" onmouseover="this.setAttribute('scrollamount',0);" onmouseout="this.start();">    
              
-              <Link to="/account">|   Passenger    </Link>
+              <Link to="/account">||   Account    ||</Link>
+              <Link to="/">     Home        ||</Link>
               </ marquee>
           </ul>
          
@@ -39,6 +40,9 @@ import {
         <Switch>
           <Route path="/account">
             <AccForm/>
+          </Route>
+          <Route path="/">
+            <HomeSc/>
           </Route>
         </Switch>
       </div>
