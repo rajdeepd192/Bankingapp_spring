@@ -1,6 +1,6 @@
-import homeLogo from './homeLogo.jpg';
+import test11 from './test11.jpg';
 import React from 'react';
-import Button from 'react-bootstrap/Button';
+
 
 
 export default class HomeSc extends React.Component {
@@ -11,7 +11,7 @@ export default class HomeSc extends React.Component {
 
 render(){
     return(
-        <div className="homescreen"><img src={test11} alt="homeLogo" fluid width={1150} height={500}/>
+        <div className="homescreen"><img src={test11} alt="test11" fluid width={1150} height={500}/>
         </div>
         
     )
